@@ -1,9 +1,15 @@
 import "./index.css";
+import Navbar from './components/Navbar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home'
 
 export default function App() {
   return (
-    <div className="flex justify-center text-2xl font-bold text-blue-600">
-      Tailwind CSS is working!
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />}  />
+      </Routes>
+    </Router>
   );
 }
