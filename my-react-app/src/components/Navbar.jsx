@@ -1,16 +1,22 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-end p-4 text-black">
-      <div className='px-4'><Link to="/">Home</Link></div>
-      <div className='px-4'><Link to="/Services">Services</Link></div>
-      <div className='px-4'><Link to="/Skills">Skills</Link></div>
-      <div className='px-4'><Link to="/Credentials">Credentials</Link></div>
-      <div className='px-4'><Link to="/Hire">Hire Me</Link></div>
+    <div className="flex justify-end p-4 text-gray-300">
+      <div className="px-4 hover:text-blue-400 transition-colors">
+        <Link to="/">Home</Link>
+      </div>
+      <div className="px-4 hover:text-blue-400 transition-colors">
+        <Link to="/Services">Projects</Link>
+      </div>
+      <div className="px-4 hover:text-blue-400 transition-colors">
+        <Link to="/Credentials">TimeLine</Link>
+      </div>
+      <div className="px-4 hover:text-blue-400 transition-colors">
+        <Link to="/Hire">Contact Me</Link>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
-
+export default Navbar;
