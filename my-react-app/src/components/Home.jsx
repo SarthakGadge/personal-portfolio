@@ -1,5 +1,15 @@
 // import Navbar from "./Navbar"
 import pic from "../assets/pic.jpeg";
+import backend from "../assets/server_stack.svg";
+import others from "../assets/others.svg";
+import frontend from "../assets/code_bracket.svg";
+import { SiGithub  } from "react-icons/si";
+import { IoMdMail } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
+import { RiWhatsappFill } from "react-icons/ri";
+
+
+
 
 const Home = () => {
   return (
@@ -60,9 +70,12 @@ const Home = () => {
         </div>
 
         <div className="flex justify-center space-x-[150px] font-poppins">
-          <div className="flex space-y-[40px] flex-col border-1 border-white rounded-lg p-6 w-[300px] h-[350px] bg-gray-800">
-            <h2 className="text-white text-3xl">FrontEnd</h2>
-            <ul className="text-xl space-y-[10px] text-gray-400">
+          <div className="flex space-y-[40px] flex-col border-1 border-white rounded-lg w-[300px] h-[350px] bg-gray-800 px-[50px] py-[40px]">
+            <div className="flex space-x-5">
+            <h2 className="text-blue-500 text-3xl ">FrontEnd</h2>
+            <img src={frontend} alt="Frontend" className="w-8 h-8 mr-3 " />            
+            </div>
+            <ul className="text-xl space-y-[10px] text-gray-400 list-disc">
               <li>Javascript</li>
               <li>React</li>
               <li>Tailwind CSS</li>
@@ -70,10 +83,13 @@ const Home = () => {
               <li>API Integration</li>
             </ul>
           </div>
-
-          <div className="flex space-y-[40px] flex-col border-1 border-white rounded-lg p-6 w-[300px] h-[350px] bg-gray-800">
-            <h2 className="text-white text-3xl">BackEnd</h2>
-            <ul className="text-xl space-y-[10px] text-gray-400">
+          
+          <div className="flex space-y-[40px] flex-col border-1 border-white rounded-lg w-[300px] h-[350px] bg-gray-800 px-[50px] py-[40px]">
+            <div className="flex space-x-5">
+            <h2 className="text-blue-500 text-3xl">BackEnd</h2>
+            <img src={backend} alt="Backend" className="w-8 h-8 mr-3 " />
+            </div>
+            <ul className="text-xl space-y-[10px] text-gray-400 list-disc">
               <li>Python</li>
               <li>Django</li>
               <li>Flask</li>
@@ -82,9 +98,12 @@ const Home = () => {
             </ul>
           </div>
 
-          <div className="flex space-y-[40px] flex-col border-1 border-white rounded-lg p-6 w-[300px] h-[350px] bg-gray-800">
-            <h2 className="text-white text-3xl">Other</h2>
-            <ul className="text-xl space-y-[10px] text-gray-400">
+          <div className="flex space-y-[40px] flex-col border-1 border-white rounded-lg w-[300px] h-[350px] bg-gray-800 px-[50px] py-[40px]">
+            <div className="flex space-x-5">
+            <h2 className="text-blue-500 text-3xl">Others</h2>
+            <img src={others} alt="others" className="w-8 h-8 mr-3" />
+            </div>
+            <ul className="text-xl space-y-[10px] text-gray-400 list-disc">
               <li>SalesForce AI associate</li>
               <li>SQL</li>
               <li>PostgreSQL</li>
@@ -97,7 +116,19 @@ const Home = () => {
 
       <hr className="border-t-1 border-gray-300 my-8" />
 
-      <section></section>
+      <section className="h-screen">
+        <div>
+          <h1 className="text-5xl text-blue-500 font-inter">Get In Touch</h1>
+        </div>
+        <div>
+          <SiGithub />
+          <FaLinkedin />
+          <IoMdMail />
+          <RiWhatsappFill />
+        </div>
+      </section>
+      <hr className="border-t-1 border-gray-300 my-8" />
+
     </>
   );
 };
