@@ -116,18 +116,17 @@ const Home = () => {
 
       <hr className="border-t-1 border-gray-300 my-8" />
 
-      <section className="h-screen">
+      <section className="flex flex-col space-y-[50px] justify-center items-center min-h-[500px]">
         <div>
           <h1 className="text-5xl text-blue-500 font-inter">Get In Touch</h1>
         </div>
-        <div>
-          <SiGithub />
-          <FaLinkedin />
-          <IoMdMail />
-          <RiWhatsappFill />
+        <div className="flex justify-center space-x-[30px]">
+          <SiGithub onClick={() => window.open('https://github.com/SarthakGadge', '_blank')} className="w-10 h-10 text-white" />
+          <FaLinkedin className="w-10 h-10 mr-3 text-white" />
+          <IoMdMail className="w-10 h-10 mr-3 text-white" />
+          <RiWhatsappFill className="w-10 h-10 mr-3 text-white" />
         </div>
       </section>
-      <hr className="border-t-1 border-gray-300 my-8" />
 
     </>
   );
