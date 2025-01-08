@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  --background-color: #f8f7ff;  /* Light gray background */
+}
+
+/* Dark mode styles */
+html.dark {
+  --background-color: black;  /* Dark mode background */
+}
+
+/* Apply the background and text color globally using the CSS variables */
 body {
-  background-color: #121928; /* Dark gray color */
+  background-color: var(--background-color);
 }
