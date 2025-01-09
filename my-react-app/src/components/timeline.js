@@ -30,7 +30,7 @@ let timelineElements = [
   {
     id: 4,
     title: "B.E in Engineering",
-    location: "Singad Academy of Engineering",
+    location: "Sinhgad Academy of Engineering",
     description:
       "Graduated with a strong foundation in engineering principles and problem-solving.",
     date: "september 2020 - July 2024",

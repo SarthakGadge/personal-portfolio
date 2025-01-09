@@ -17,7 +17,7 @@ const Timeline = () => {
   return (
     <>
       <div>
-        <h1 className="timeline-title">Timeline</h1>
+        <h1 className="text-5xl text-[#540d6e] justify-center flex my-[40px] mt-[100px]">Timeline</h1>
         <VerticalTimeline>
           {timelineElements.map((element) => {
             let isWorkIcon = element.icon === "work";
@@ -29,12 +29,16 @@ const Timeline = () => {
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                 icon={
                   isWorkIcon ? (
-                    <img src={work} className="w-8 h-8" />
+                    <img src={work} className="w-8 h-8 flex justify-center items-center ml-[13.5px] mt-[14px]" />
                   ) : (
-                    <img src={school} className="w-8 h-8" />
+                    <img src={school} className="w-8 h-8 flex justify-center items-center ml-[13.5px] mt-[14px]" />
                   )
                 }
-              ></VerticalTimelineElement>
+              >
+                <h3 className="text-3xl pb-4 text-red-600">{element.title}</h3>
+                <h5 className="text-sm italic">{element.location}</h5>
+                <p>{element.description}</p>
+              </VerticalTimelineElement>
             );
           })}
         </VerticalTimeline>
