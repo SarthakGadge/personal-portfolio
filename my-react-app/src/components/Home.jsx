@@ -3,6 +3,7 @@ import pic from "../assets/pic.jpeg";
 import backend from "../assets/server_stack.svg";
 import others from "../assets/others.svg";
 import frontend from "../assets/code_bracket.svg";
+import Timeline from "../components/Timeline.jsx";
 
 const Home = () => {
   return (
@@ -53,6 +54,10 @@ const Home = () => {
             React, to build responsive and user-friendly web applications.
           </p>
         </div>
+      </section>
+
+      <section>
+        <Timeline />
       </section>
 
       <section className="flex h-screen flex-col items-center justify-center space-y-[100px] dark:bg-black">
