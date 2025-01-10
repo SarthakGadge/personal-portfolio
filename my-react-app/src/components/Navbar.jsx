@@ -5,7 +5,7 @@ import { ThemeToggle } from "./ThemeToggle ";
 const Navbar = () => {
   return (
     <>
-      <div className="p-4 text-[#540d6e] bg-[#b8b8ff] flex justify-between dark:text-white dark:bg-black">
+      <div className="p-4 text-[#FF7F50] bg-[#FFD700] flex justify-between dark:text-white dark:bg-black">
         <ThemeToggle />
         <div className="flex justify-end ">
           <div className="px-4 hover:text-red-600 transition-colors">

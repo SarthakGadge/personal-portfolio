@@ -38,7 +38,7 @@ const Home = () => {
 
       <section className=" flex justify-center my-10 dark:bg-black">
         <div className="flex flex-col space-y-8 mx-5">
-          <h1 className="text-5xl text-[#540d6e] font-inter dark:text-blue-500">
+          <h1 className="text-5xl text-[#FF7F50] font-inter dark:text-blue-500">
             About Me
           </h1>
           <p className="text-gray-500 text-xl font-poppins w-[70%] dark:text-white">
@@ -62,7 +62,7 @@ const Home = () => {
 
       <section className="flex h-screen flex-col items-center justify-center space-y-[100px] dark:bg-black">
         <div>
-          <h1 className="text-5xl text-[#540d6e] font-inter dark:text-blue-500">
+          <h1 className="text-5xl text-[#FF7F50] font-inter dark:text-blue-500">
             My Skills
           </h1>
         </div>

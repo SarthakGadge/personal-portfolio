@@ -6,9 +6,9 @@ import { GmailModal } from "./GmailModal";
 const Footer = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center h-[100px] bg-[#b8b8ff] space-y-5 py-[100px] dark:bg-black">
+      <div className="flex flex-col items-center justify-center h-[100px] bg-[#FFD700] space-y-5 py-[100px] dark:bg-black">
         <div>
-          <h1 className="text-2xl text-[#540d6e] font-inter dark:text-white">
+          <h1 className="text-2xl text-[#FF7F50] font-inter dark:text-white">
             Get In Touch
           </h1>
         </div>

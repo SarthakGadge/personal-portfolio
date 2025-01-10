@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  --background-color: #baa3b1;  /* Light gray background */
+  --background-color: #008080;  /* Light gray background */
 }
 
 /* Dark mode styles */
