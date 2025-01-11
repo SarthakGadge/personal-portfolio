@@ -6,13 +6,12 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  // Effect to detect scroll and add/remove shadow
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 10) {
-        setScrolled(true); // Add shadow after scrolling
+        setScrolled(true);
       } else {
-        setScrolled(false); // Remove shadow when at top
+        setScrolled(false);
       }
     };
 
@@ -24,15 +23,11 @@ const Navbar = () => {
     <>
       <div
         className={`p-4  text-black dark:text-white dark:bg-black flex justify-between items-center sticky top-0 z-50 transition-all duration-300 ease-in-out ${
-          scrolled
-            ? "shadow-lg bg-[#A35C7A] dark:border-b-2 dar:border-white"
-            : ""
+          scrolled ? "shadow-lg bg-[#A35C7A] dark:border-b-2" : ""
         }`}
       >
-        {/* Theme Toggle */}
         <ThemeToggle />
 
-        {/* Hamburger Menu Button */}
         <button
           className="sm:hidden focus:outline-none"
           onClick={() => setMenuOpen(!menuOpen)}
@@ -53,13 +48,11 @@ const Navbar = () => {
           </svg>
         </button>
 
-        {/* Desktop Navigation */}
         <div className="hidden sm:flex justify-end">
           <NavLinks />
         </div>
       </div>
 
-      {/* Mobile Navigation */}
       {menuOpen && (
         <div className="sm:hidden bg-[#A35C7A] text-black dark:text-white dark:bg-black p-4">
           <NavLinks />
@@ -69,7 +62,6 @@ const Navbar = () => {
   );
 };
 
-// NavLinks Component for Reusability
 const NavLinks = () => {
   return (
     <>

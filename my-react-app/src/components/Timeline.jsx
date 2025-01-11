@@ -26,8 +26,8 @@ const Timeline = () => {
 
   return (
     <>
-      <div>
-        <h1 className="text-5xl text-[#2D8F89] justify-center flex my-[40px] mt-[100px] dark:text-blue-500">
+      <div className="mt-[200px]">
+        <h1 className="text-5xl text-[#2D8F89] justify-center flex my-[40px] mt-[100px] dark:text-blue-500 underline font-bold">
           Timeline
         </h1>
         <VerticalTimeline>
@@ -39,6 +39,10 @@ const Timeline = () => {
                 date={element.date}
                 dateClassName="date"
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
+                contentStyle={{ background: "#1F2937", color: "#fff" }}
+                contentArrowStyle={{
+                  borderRight: "7px solid  #1F2937",
+                }}
                 icon={
                   <img
                     src={isWorkIcon ? work : school}

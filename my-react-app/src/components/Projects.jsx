@@ -5,13 +5,12 @@ import postman from "../assets/postman-icon-svgrepo-com.svg";
 
 export const Projects = () => {
   return (
-    <div>
-      <h1 className="text-5xl font-bold text-center text-[#2D8F89] mb-8">
+    <div className="px-4 sm:px-8 lg:px-16">
+      <h1 className="text-5xl font-bold text-center text-[#2D8F89] mb-8 underline dark:text-blue-500">
         My Projects
       </h1>
       <div className="flex flex-wrap justify-center space-x-0 sm:space-x-[30px] lg:space-x-[150px]">
-        {/* BookNest Project */}
-        <div className="relative flex flex-col my-6 bg-white shadow-sm w-full sm:w-96 bg-coral border-2 border-black p-5 rounded-lg text-center">
+        <div className="relative flex flex-col my-6 bg-white w-full sm:w-96 bg-coral border-2 shadow-lg border-black p-5 rounded-lg text-center dark:bg-gray-900 dark:border-white">
           <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
             <img src={BookImg} alt="card-image" />
           </div>
@@ -19,7 +18,7 @@ export const Projects = () => {
             <h6 className="mb-2 text-[#C890A7] text-xl font-semibold">
               BookNest
             </h6>
-            <p className="text-slate-600 leading-normal font-light">
+            <p className="text-slate-600 leading-normal font-light dark:text-white">
               BookNest is a platform designed for book lovers to explore,
               review, and discuss books. It allows users to track their reading
               progress, manage their bookshelves, and participate in book
@@ -50,8 +49,7 @@ export const Projects = () => {
           </div>
         </div>
 
-        {/* Sentiment Analysis Project */}
-        <div className="relative flex flex-col my-6 bg-white shadow-sm w-full sm:w-96 bg-coral border-2 border-black p-5 rounded-lg text-center">
+        <div className="relative flex flex-col my-6 bg-white shadow-lg w-full sm:w-96 bg-coral border-2 border-black p-5 rounded-lg text-center dark:bg-gray-900 dark:border-white">
           <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
             <img src={BookImg2} alt="card-image" />
           </div>
@@ -59,7 +57,7 @@ export const Projects = () => {
             <h6 className="mb-2 text-[#C890A7] text-xl font-semibold">
               Sentiment Analysis Project{" "}
             </h6>
-            <p className="text-slate-600 leading-normal font-light">
+            <p className="text-slate-600 leading-normal font-light dark:text-white">
               This project uses Hugging Face&apos;s Transformers library to
               perform sentiment analysis on text data. The goal is to determine
               the emotional tone behind user reviews, particularly focusing on
@@ -82,7 +80,7 @@ export const Projects = () => {
         </div>
       </div>
 
-      <h3 className="my-11 text-center text-gray-700 text-2xl">
+      <h3 className="my-11 text-center text-gray-700 text-base sm:text-2xl dark:text-white">
         Exciting new projects are in the works! Stay tuned for updates as I
         build more full-stack solutions
       </h3>

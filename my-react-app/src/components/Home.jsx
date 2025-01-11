@@ -8,7 +8,6 @@ import Timeline from "../components/Timeline.jsx";
 const Home = () => {
   return (
     <>
-      {/* Profile Section */}
       <section className="justify-center flex flex-col items-center h-screen px-4">
         <div className="relative flex justify-center">
           <div className="w-36 h-36 sm:w-48 sm:h-48 rounded-full bg-gradient-to-r from-[#4C6E91] via-[#2D8F89] to-[#4C6E91] p-2 dark:bg-white dark:bg-none">
@@ -37,10 +36,9 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Me Section */}
       <section className="flex flex-col items-center my-7 px-4 dark:bg-black justify-center h-[300px]">
         <div className="flex flex-col space-y-8 w-[80%]">
-          <h1 className="text-3xl sm:text-5xl text-[#2D8F89] font-inter dark:text-blue-500 text-center">
+          <h1 className="text-3xl sm:text-5xl text-[#2D8F89] font-inter dark:text-blue-500 text-center underline font-bold">
             About Me
           </h1>
           <p className="text-gray-700 text-base sm:text-xl font-poppins dark:text-white text-center w-full sm:text-left">
@@ -58,19 +56,16 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Timeline Section */}
       <section>
         <Timeline />
       </section>
 
-      {/* Skills Section */}
       <section className="flex flex-col items-center justify-center py-16 space-y-10 dark:bg-black">
-        <h1 className="text-3xl sm:text-5xl text-[#2D8F89] font-inter dark:text-blue-500 text-center">
+        <h1 className="text-3xl sm:text-5xl text-[#2D8F89] font-inter dark:text-blue-500 text-center underline font-bold">
           My Skills
         </h1>
         <div className="flex flex-wrap justify-center gap-10 font-poppins">
-          {/* Frontend Card */}
-          <div className="flex flex-col items-center space-y-4 border-2 shadow-lg rounded-lg w-[90%] sm:w-[300px] h-auto sm:h-[350px] p-6">
+          <div className="flex flex-col items-center space-y-4 border-2 shadow-lg rounded-lg w-[90%] sm:w-[300px] h-auto sm:h-[350px] p-6 dark:bg-gray-900">
             <div className="flex items-center space-x-5">
               <h2 className="text-[#2D8F89] text-2xl sm:text-3xl">FrontEnd</h2>
               <img
@@ -88,8 +83,7 @@ const Home = () => {
             </ul>
           </div>
 
-          {/* Backend Card */}
-          <div className="flex flex-col items-center space-y-4 border-2 shadow-lg rounded-lg w-[90%] sm:w-[300px] h-auto sm:h-[350px] p-6">
+          <div className="flex flex-col items-center space-y-4 border-2 shadow-lg rounded-lg w-[90%] sm:w-[300px] h-auto sm:h-[350px] p-6 dark:bg-gray-900">
             <div className="flex items-center space-x-5">
               <h2 className="text-[#2D8F89] text-2xl sm:text-3xl">BackEnd</h2>
               <img
@@ -107,8 +101,7 @@ const Home = () => {
             </ul>
           </div>
 
-          {/* Others Card */}
-          <div className="flex flex-col items-center space-y-4 border-2 shadow-lg rounded-lg w-[90%] sm:w-[300px] h-auto sm:h-[350px] p-6">
+          <div className="flex flex-col items-center space-y-4 border-2 shadow-lg rounded-lg w-[90%] sm:w-[300px] h-auto sm:h-[350px] p-6 dark:bg-gray-900">
             <div className="flex items-center space-x-5">
               <h2 className="text-[#2D8F89] text-2xl sm:text-3xl">Others</h2>
               <img
@@ -117,12 +110,12 @@ const Home = () => {
                 className="w-6 sm:w-8 h-6 sm:h-8"
               />
             </div>
-            <ul className="text-sm sm:text-xl space-y-2 text-gray-700 list-disc dark:text-white">
-              <li>SalesForce AI associate</li>
+            <ul className="text-sm sm:text-xl space-y-2 text-gray-700 list-disc dark:text-white pl-5">
               <li>SQL</li>
               <li>PostgreSQL</li>
               <li>Git/GitHub</li>
               <li>Postman</li>
+              <li>SalesForce AI associate</li>
             </ul>
           </div>
         </div>
