@@ -1,43 +1,38 @@
 import { SiGithub } from "react-icons/si";
 import LinkedIn from "../assets/linkedin-svgrepo-com.svg";
-import Whatsapp from "../assets/whatsapp-svgrepo-com.svg";
 import { GmailModal } from "./GmailModal";
 
 const Footer = () => {
   return (
-    <>
-      <div className="flex flex-col items-center justify-center h-[100px] bg-[#b8b8ff] space-y-5 py-[100px] dark:bg-black">
-        <div>
-          <h1 className="text-2xl text-[#540d6e] font-inter dark:text-white">
-            Get In Touch
-          </h1>
-        </div>
-        <div className="flex justify-center space-x-[30px]">
-          <SiGithub
-            onClick={() =>
-              window.open("https://github.com/SarthakGadge", "_blank")
-            }
-            className="w-8 h-8 text-black dark:text-white"
-          />
+    <div className="flex flex-col items-center justify-center py-10 space-y-5 bg-[#B0788F] dark:bg-black dark:border-t-2">
+      <h1 className="text-xl sm:text-2xl text-black font-inter dark:text-white">
+        Get In Touch
+      </h1>
 
-          <img
-            onClick={() =>
-              window.open("https://linkedin.com/in/sarthakgadge243")
-            }
-            src={LinkedIn}
-            alt="LinkedIn logo"
-            className="w-8 h-8 mr-3"
-          />
+      <div className="flex justify-center space-x-5 sm:space-x-8">
+        <SiGithub
+          onClick={() =>
+            window.open("https://github.com/SarthakGadge", "_blank")
+          }
+          className="w-6 h-6 sm:w-8 sm:h-8 text-black dark:text-white cursor-pointer hover:scale-110 transition-transform duration-200"
+        />
 
-          <GmailModal />
+        <img
+          onClick={() =>
+            window.open("https://linkedin.com/in/sarthakgadge243", "_blank")
+          }
+          src={LinkedIn}
+          alt="LinkedIn logo"
+          className="w-6 h-6 sm:w-8 sm:h-8 cursor-pointer hover:scale-110 transition-transform duration-200"
+        />
 
-          <img src={Whatsapp} alt="Gmail logo" className="w-8 h-8 mr-3" />
-        </div>
-        <h2 className="text-gray-500">
-          © 2025 Sarthak Gadge. All rights reserved
-        </h2>
+        <GmailModal />
       </div>
-    </>
+
+      <h2 className="text-xs sm:text-sm text-gray-700 dark:text-gray-400 text-center">
+        © 2025 Sarthak Gadge. All rights reserved
+      </h2>
+    </div>
   );
 };
 
