@@ -9,32 +9,34 @@ const Home = () => {
   return (
     <>
       <section className="justify-center flex flex-col items-center h-screen">
-        <div className="relative flex justify-center">
-          <div className="w-48 h-48 rounded-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 p-2 dark:bg-white dark:bg-none">
-            <img
-              src={pic}
-              alt="Description"
-              className="w-44 h-44 rounded-full object-cover shadow-2xl border-2 border-black"
-            />
-          </div>
-        </div>
-        <div>
-          <h1 className="text-7xl font-bold flex justify-center py-3 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 bg-clip-text text-transparent dark:text-white">
-            Sarthak Gadge
-          </h1>
-          <p className="justify-center flex mt-2 text-gray-500 text-2xl font-poppins dark:text-white">
-            Full Stack Developer | Backend Developer | Python | React
-          </p>
-        </div>
-        <div className="justify-center flex mt-5 space-x-4">
-          <button className="dark:bg-black dark:bg-none dark:border-white dark:border-2 dark:hover:bg-white dark:hover:text-black  p-3 px-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-medium rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-            Contact Me
-          </button>
-          <button className="dark:bg-none dark:text-black dark:border-0 dark:hover:bg-black dark:hover:text-white dark:hover:border-white dark:hover:border-2  p-3 px-6 bg-white text-blue-500 border border-blue-500 font-medium rounded-full shadow-lg hover:bg-blue-500 hover:text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-            View Project
-          </button>
-        </div>
-      </section>
+  <div className="relative flex justify-center">
+    <div className="w-48 h-48 rounded-full bg-gradient-to-r from-[#4C6E91] via-[#2D8F89] to-[#4C6E91] p-2 dark:bg-white dark:bg-none">
+      <img
+        src={pic}
+        alt="Description"
+        className="w-44 h-44 rounded-full object-cover shadow-2xl border-2 border-black"
+      />
+    </div>
+  </div>
+  <div>
+    <h1 className="text-7xl font-bold flex justify-center py-3 bg-gradient-to-r from-[#4C6E91] via-[#2D8F89] to-[#4C6E91]  bg-clip-text text-transparent dark:text-white">
+      Sarthak Gadge
+    </h1>
+    <p className="justify-center flex mt-2 text-gray-700 text-2xl font-poppins dark:text-white">
+      Full Stack Developer | Backend Developer | Python | React
+    </p>
+  </div>
+  <div className="justify-center flex mt-5 space-x-4">
+    <button className="dark:bg-black dark:bg-none dark:border-white dark:border-2 dark:hover:bg-white dark:hover:text-black p-3 px-6 bg-gradient-to-r from-[#4C6E91] via-[#2D8F89] to-[#4C6E91] text-white font-medium rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+      Contact Me
+    </button>
+    <button className="dark:bg-none dark:text-black dark:border-0 dark:hover:bg-black dark:hover:text-white dark:hover:border-white dark:hover:border-2 p-3 px-6 bg-white text-[#4C6E91] border border-[#4C6E91] font-medium rounded-full shadow-lg hover:bg-[#4B5563] hover:text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+      View Project
+    </button>
+  </div>
+</section>
+
+
 
       <section className=" flex justify-center my-10 dark:bg-black">
         <div className="flex flex-col space-y-8 mx-5">
