@@ -28,7 +28,7 @@ export const GmailModal = () => {
         <img
           src={Gmail}
           alt="Gmail logo"
-          className="w-8 h-8 mr-3"
+          className="w-6 h-6 sm:w-8 sm:h-8 cursor-pointer hover:scale-110 transition-transform duration-200"
           onClick={handleOpenModal}
         />
 

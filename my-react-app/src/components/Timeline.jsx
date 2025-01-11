@@ -11,13 +11,25 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const Timeline = () => {
-  let workIconStyles = { background: "#06D6A0" };
-  let schoolIconStyles = { background: "#f9c74f" };
+  let workIconStyles = {
+    background: "#06D6A0",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
+  let schoolIconStyles = {
+    background: "#f9c74f",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  };
 
   return (
     <>
       <div>
-        <h1 className="text-5xl text-[#540d6e] justify-center flex my-[40px] mt-[100px]">Timeline</h1>
+        <h1 className="text-5xl text-[#2D8F89] justify-center flex my-[40px] mt-[100px] dark:text-blue-500">
+          Timeline
+        </h1>
         <VerticalTimeline>
           {timelineElements.map((element) => {
             let isWorkIcon = element.icon === "work";
@@ -28,14 +40,16 @@ const Timeline = () => {
                 dateClassName="date"
                 iconStyle={isWorkIcon ? workIconStyles : schoolIconStyles}
                 icon={
-                  isWorkIcon ? (
-                    <img src={work} className="w-8 h-8 flex justify-center items-center ml-[13.5px] mt-[14px]" />
-                  ) : (
-                    <img src={school} className="w-8 h-8 flex justify-center items-center ml-[13.5px] mt-[14px]" />
-                  )
+                  <img
+                    src={isWorkIcon ? work : school}
+                    className="w-6 h-6 sm:w-8 sm:h-8 flex justify-center items-center"
+                    alt={isWorkIcon ? "Work Icon" : "School Icon"}
+                  />
                 }
               >
-                <h3 className="text-3xl pb-4 text-red-600">{element.title}</h3>
+                <h3 className="text-3xl pb-4 text-[#C890A7] dark:text-blue-500">
+                  {element.title}
+                </h3>
                 <h5 className="text-sm italic">{element.location}</h5>
                 <p>{element.description}</p>
               </VerticalTimelineElement>
