@@ -14,7 +14,7 @@ export const ContactMe = () => {
   return (
     <section className="flex flex-col items-center justify-center h-screen">
       <div className="flex flex-col items-center space-y-[50px] flex-grow justify-center">
-        <h1 className="text-5xl text-[#2D8F89]">Contact Me</h1>
+        <h1 className="text-5xl text-[#2D8F89] font-bold">Contact Me</h1>
         <div className="flex flex-col space-y-10 w-[70%] text-center">
           <p className="text-gray-700 text-3xl">
             If you are looking to get ahold of me, you can send me an email at
