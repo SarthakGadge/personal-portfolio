@@ -23,7 +23,7 @@ let timelineElements = [
     title: "Wordpress Developer",
     location: "Out of the Box Solutions",
     description:
-      "Wordpress Developer InternLed a team of 5 in developing and optimizing websites for school-level competitions, ensuring seamless integration and enhanced user experience.Performed SEO optimization to improve search engine rankings.",
+      "Wordpress Developer Intern, led a team of 5 in developing and optimizing websites for school-level competitions, ensuring seamless integration and enhanced user experience.Performed SEO optimization to improve search engine rankings.",
     date: "March 2023 - May 2023",
     icon: "work",
   },
