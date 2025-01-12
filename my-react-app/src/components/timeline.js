@@ -14,7 +14,7 @@ let timelineElements = [
     title: "Data Analyst",
     location: "Data Lumina",
     description:
-      "Conducted data cleaning and statistical analysis to ensure data quality, utilizing Python and libraries such as Pandas and NumPy for exploratory data analysis (EDA)",
+      "Conducted data cleaning and statistical analysis to ensure data quality, utilizing Python and libraries such as Pandas and NumPy for exploratory data analysis (EDA).",
     date: "December 2023 - January 2024",
     icon: "work",
   },
