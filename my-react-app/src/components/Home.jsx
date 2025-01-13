@@ -4,6 +4,8 @@ import backend from "../assets/server_stack.svg";
 import others from "../assets/others.svg";
 import frontend from "../assets/code_bracket.svg";
 import Timeline from "../components/Timeline.jsx";
+import { Link } from 'react-router-dom';
+
 
 const Home = () => {
   return (
@@ -27,12 +29,15 @@ const Home = () => {
           </p>
         </div>
         <div className="mt-5 flex flex-wrap justify-center gap-4">
-          <button className="dark:bg-black dark:bg-none dark:border-white dark:border-2 dark:hover:bg-white dark:hover:text-black p-3 px-6 bg-gradient-to-r from-[#4C6E91] via-[#2D8F89] to-[#4C6E91] text-white font-medium rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
-            Contact Me
-          </button>
-          <button className="dark:bg-none dark:text-black dark:border-0 dark:hover:bg-black dark:hover:text-white dark:hover:border-white dark:hover:border-2 p-3 px-6 bg-white text-[#4C6E91] border border-[#4C6E91] font-medium rounded-full shadow-lg hover:bg-[#4B5563] hover:text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300">
+        <Link
+  to="/contact"
+  className="dark:bg-black dark:bg-none dark:border-white dark:border-2 dark:hover:bg-white dark:hover:text-black p-3 px-6 bg-gradient-to-r from-[#4C6E91] via-[#2D8F89] to-[#4C6E91] text-white font-medium rounded-full shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+>
+  Contact Me
+</Link>
+          <Link to='/Projects' className="dark:bg-none dark:text-black dark:border-0 dark:hover:bg-black dark:hover:text-white dark:hover:border-white dark:hover:border-2 p-3 px-6 bg-white text-[#4C6E91] border border-[#4C6E91] font-medium rounded-full shadow-lg hover:bg-[#4B5563] hover:text-white hover:shadow-xl transform hover:scale-105 transition-all duration-300">
             View Project
-          </button>
+          </Link>
         </div>
       </section>
 
